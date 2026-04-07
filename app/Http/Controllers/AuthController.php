@@ -30,12 +30,7 @@ class AuthController extends Controller
     }
 
     public function logout(Request $request) {
-        Auth::guard('web')->logout();
-
-        if ($request->hasSession()) {
-            $request->session()->invalidate();
-            $request->session()->regenerateToken();
-        }
+        $request->user()->currentAccessToken()->delete();
 
         return $this->success(null, 'Logged out');
     }
