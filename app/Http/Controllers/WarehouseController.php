@@ -2,19 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Role;
+use App\Models\Warehouse;
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class WarehouseController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-       
+        //
     }
-
 
     /**
      * Store a newly created resource in storage.
@@ -27,7 +26,7 @@ class RoleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Role $role)
+    public function show(Warehouse $warehouse)
     {
         //
     }
@@ -35,7 +34,7 @@ class RoleController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Role $role)
+    public function update(Request $request, Warehouse $warehouse)
     {
         //
     }
@@ -43,7 +42,7 @@ class RoleController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Role $role)
+    public function destroy(Warehouse $warehouse)
     {
         //
     }
